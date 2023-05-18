@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+:root {
+  font-family: "Raleway";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px 10px 25px;
+  background: linear-gradient(90deg, #3b46e4 1.18%, #616ee7 100%);
+  white-space: nowrap;
+}
+
+.site-logo {
+  object-fit: contain;
+  max-width: 75px;
+}
+
+.header-right {
+  font-weight: 100;
+}
+
+.meme-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+}
+
+.form-top,
+.form-bottom {
+  margin: 2%;
+  width: 100%;
+  border: 2px solid #b3b3b3;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.form-top:focus,
+.form-bottom:focus {
+  outline: none;
+}
+
+.meme-button {
+  font-family: "Raleway";
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #3b46e4 1.18%, #616ee7 100%);
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  padding: 10px;
+  width: 96%;
+  transition: all 0.3s ease;
+}
+
+.meme-button:hover {
+  background: linear-gradient(90deg, #3b46e4 1.18%, #616ee7 100%);
+}
+
+.meme-button:active {
+  background: linear-gradient(90deg, #616ee7 1.18%, #3b46e4 100%);
+  transform: translateY(8px);
+}
+
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meme-img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
